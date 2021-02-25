@@ -181,12 +181,12 @@ export class ProjectsForm extends React.PureComponent<IProjectsFormProps & FormC
                       //  hidden: this.props.type === 'transfer',
                         rules: [{
                           required: true,
-                          message: 'Name 不能为空'
+                          message: '名称 不能为空'
                         }, {
                           validator: onCheckUniqueName
                         }]
                       })(
-                        <Input placeholder="Name" />
+                        <Input placeholder="名称" />
                       )}
                     </FormItem>
                 </Col>
@@ -216,7 +216,7 @@ export class ProjectsForm extends React.PureComponent<IProjectsFormProps & FormC
                       initialValue: ''
                     })(
                       <TextArea
-                        placeholder="Description"
+                        placeholder="描述"
                         autosize={{minRows: 2, maxRows: 6}}
                       />
                     )}

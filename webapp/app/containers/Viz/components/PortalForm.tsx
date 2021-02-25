@@ -102,12 +102,12 @@ export class PortalForm extends React.PureComponent<IProtalListProps & FormCompo
                   {getFieldDecorator('name', {
                     rules: [{
                       required: true,
-                      message: 'Name 不能为空'
+                      message: '名称 不能为空'
                     }, {
                       validator: this.checkNameUnique
                     }]
                   })(
-                    <Input placeholder="Name" />
+                    <Input placeholder="名称" />
                   )}
                 </FormItem>
               </Col>
@@ -117,7 +117,7 @@ export class PortalForm extends React.PureComponent<IProtalListProps & FormCompo
                     initialValue: ''
                   })(
                     <TextArea
-                      placeholder="Description"
+                      placeholder="描述"
                       autosize={{minRows: 2, maxRows: 6}}
                     />
                   )}

@@ -272,7 +272,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
 
   return (
     <Modal
-      title={`${!sourceId ? '新增' : '修改'} Source`}
+      title={`${!sourceId ? '新增' : '修改'}数据源`}
       wrapClassName="ant-modal-large"
       maskClosable={false}
       visible={visible}
@@ -297,7 +297,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
                     validator: checkNameUnique
                   }
                 ]
-              })(<Input autoComplete="off" placeholder="Name" />)}
+              })(<Input autoComplete="off" placeholder="名称" />)}
             </FormItem>
           </Col>
         </Row>
@@ -331,7 +331,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
             <FormItem label="用户名" {...commonFormItemStyle}>
               {getFieldDecorator('config.username', {
                 initialValue: ''
-              })(<Input autoComplete="off" placeholder="User" />)}
+              })(<Input autoComplete="off" placeholder="用户名" />)}
             </FormItem>
           </Col>
           <Col span={12}>
@@ -341,7 +341,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
               })(
                 <Input
                   autoComplete="off"
-                  placeholder="Password"
+                  placeholder="密码"
                   type="password"
                 />
               )}
@@ -359,7 +359,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
             initialValue: ''
           })(
             <Input
-              placeholder="Connection Url"
+              placeholder="连接Url"
               autoComplete="off"
               addonAfter={
                 testLoading ? (
@@ -381,7 +381,7 @@ const SourceConfigModal: React.FC<ISourceConfigModalProps> = (props) => {
             initialValue: ''
           })(
             <TextArea
-              placeholder="Description"
+              placeholder="描述"
               autosize={{ minRows: 2, maxRows: 6 }}
             />
           )}

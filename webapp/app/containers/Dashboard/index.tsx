@@ -813,7 +813,7 @@ export class Dashboard extends React.Component<IDashboardProps, IDashboardStates
                       content={
                         <div className={styles.portalTreeSearch}>
                           <Search
-                            placeholder="Search"
+                            placeholder="搜索"
                             onChange={this.searchDashboard}
                           />
                           <ul>

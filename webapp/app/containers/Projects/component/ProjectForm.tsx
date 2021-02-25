@@ -136,7 +136,7 @@ const ProjectsForm: React.FC<IProjectsFormProps & FormComponentProps> = ({
                       }]
                     })(
                       <Select
-                        placeholder="Please select a organization"
+                        placeholder="请选择你的组织"
                       >
                         {
                           organizations ? organizations.map((o) => {
@@ -170,13 +170,13 @@ const ProjectsForm: React.FC<IProjectsFormProps & FormComponentProps> = ({
                       initialValue: currentPro.name,
                       rules: [{
                         required: true,
-                        message: 'Name 不能为空'
+                        message: '名称 不能为空'
                       }, {
                         validator: onCheckUniqueName
                       }],
                       validateFirst: true
                     })(
-                      <Input placeholder="Name" />
+                      <Input placeholder="名称" />
                     )}
                   </FormItem>
                 )}
@@ -188,7 +188,7 @@ const ProjectsForm: React.FC<IProjectsFormProps & FormComponentProps> = ({
                       initialValue: currentPro.description
                     })(
                       <TextArea
-                        placeholder="Description"
+                        placeholder="描述"
                         autosize={{minRows: 2, maxRows: 6}}
                       />
                     )}

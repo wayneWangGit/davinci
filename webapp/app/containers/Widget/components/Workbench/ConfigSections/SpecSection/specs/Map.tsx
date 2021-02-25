@@ -50,7 +50,7 @@ function SpecSectionMap (props: ISpecSectionMapProps) {
             <Col span={4}>速度</Col>
             <Col span={6}>
               <InputNumber
-                placeholder="speed"
+                placeholder="速度"
                 className={styles.blockElm}
                 value={linesSpeed}
                 min={0}

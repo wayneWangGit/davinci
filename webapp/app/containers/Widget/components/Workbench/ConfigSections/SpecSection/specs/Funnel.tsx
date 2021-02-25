@@ -36,7 +36,7 @@ function SpecSectionFunnel (props: ISpecSectionFunnelProps) {
           <Col span={4}>间距</Col>
           <Col span={8}>
             <InputNumber
-              placeholder="gap"
+              placeholder="间距"
               className={styles.blockElm}
               value={gapNumber}
               min={0}

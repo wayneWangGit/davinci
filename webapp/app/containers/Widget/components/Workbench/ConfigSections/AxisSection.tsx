@@ -102,7 +102,7 @@ export class AxisSection extends React.PureComponent<IAxisSectionProps, {}> {
         <Col span={8}>旋转角度</Col>
         <Col span={10}>
             <InputNumber
-              placeholder="xAxisRotate"
+              placeholder="X轴旋转角度"
               className={styles.blockElm}
               value={xAxisRotate}
               onChange={this.inputNumberChange('xAxisRotate')}
@@ -120,7 +120,7 @@ export class AxisSection extends React.PureComponent<IAxisSectionProps, {}> {
         <Col span={8}>刻度间隔</Col>
         <Col span={10}>
           <InputNumber
-            placeholder="xAxisInterval"
+            placeholder="X轴间隔"
             className={styles.blockElm}
             value={xAxisInterval}
             onChange={this.inputNumberChange('xAxisInterval')}
@@ -191,7 +191,7 @@ export class AxisSection extends React.PureComponent<IAxisSectionProps, {}> {
         <Col span={12}>标题旋转</Col>
         <Col span={10}>
           <InputNumber
-            placeholder="width"
+            placeholder="角度"
             className={styles.blockElm}
             value={nameRotate}
             onChange={this.inputNumberChange('nameRotate')}
@@ -203,7 +203,7 @@ export class AxisSection extends React.PureComponent<IAxisSectionProps, {}> {
         <Col span={12}>标题与轴线距离</Col>
         <Col span={10}>
           <InputNumber
-            placeholder="nameGap"
+            placeholder="距离间隙"
             className={styles.blockElm}
             value={nameGap}
             onChange={this.inputNumberChange('nameGap')}

@@ -68,7 +68,7 @@ export class CopyModal extends React.PureComponent<ICopyModalProps> {
 
     return (
       <Modal
-        title="复制 Widget"
+        title="复制组件"
         wrapClassName="ant-modal-small"
         visible={visible}
         onCancel={onCancel}

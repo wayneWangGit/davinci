@@ -164,7 +164,7 @@ export class Workbench extends React.Component<
   }
 
   private placeholder = {
-    name: '请输入Widget名称',
+    name: '请输入组件名称',
     description: '请输入描述…'
   }
 

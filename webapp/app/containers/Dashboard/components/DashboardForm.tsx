@@ -155,12 +155,12 @@ export class DashboardForm extends React.PureComponent<IDashboardFormProps, {}> 
               {getFieldDecorator('name', {
                 rules: [{
                   required: true,
-                  message: 'Name 不能为空'
+                  message: '名称 不能为空'
                 }, {
                   validator: this.checkNameUnique
                 }]
               })(
-                <Input placeholder="Name" />
+                <Input placeholder="名称" />
               )}
             </FormItem>
             <FormItem

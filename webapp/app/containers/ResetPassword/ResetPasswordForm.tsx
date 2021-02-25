@@ -68,7 +68,7 @@ export class ResetPasswordForm extends React.PureComponent<IResetPasswordProps &
                   message: '旧密码不能为空'
                 }]
               })(
-                <Input type="password" placeholder="Your Password" />
+                <Input type="password" placeholder="原密码" />
               )}
             </FormItem>
           </Col>
@@ -91,7 +91,7 @@ export class ResetPasswordForm extends React.PureComponent<IResetPasswordProps &
                   validator: this.forceCheckConfirm
                 }]
               })(
-                <Input type="password" placeholder="New Password" />
+                <Input type="password" placeholder="新密码" />
               )}
             </FormItem>
           </Col>
@@ -110,7 +110,7 @@ export class ResetPasswordForm extends React.PureComponent<IResetPasswordProps &
                   validator: this.checkPasswordConfirm
                 }]
               })(
-                <Input type="password" placeholder="Confirm Password" />
+                <Input type="password" placeholder="确认新密码" />
               )}
             </FormItem>
           </Col>

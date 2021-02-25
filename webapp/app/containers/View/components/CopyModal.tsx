@@ -88,7 +88,7 @@ export class CopyModal extends React.PureComponent<ICopyModalProps> {
 
     return (
       <Modal
-        title="复制 View"
+        title="复制视图"
         wrapClassName="ant-modal-small"
         visible={visible}
         footer={modalButtons}

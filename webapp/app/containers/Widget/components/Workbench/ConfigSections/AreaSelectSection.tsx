@@ -46,7 +46,7 @@ export class AreaSelectSection extends React.PureComponent<IAreaSelectSectionPro
             <Col span={6}>背景</Col>
             <Col span={14}>
               <InputNumber
-                placeholder="width"
+                placeholder="宽度"
                 className={styles.blockElm}
                 value={width}
                 min={1}
@@ -65,7 +65,7 @@ export class AreaSelectSection extends React.PureComponent<IAreaSelectSectionPro
             <Col span={6}>边框</Col>
             <Col span={14}>
               <InputNumber
-                placeholder="borderWidth"
+                placeholder="边框宽度"
                 className={styles.blockElm}
                 value={borderWidth}
                 min={1}
@@ -84,7 +84,7 @@ export class AreaSelectSection extends React.PureComponent<IAreaSelectSectionPro
             <Col span={6}>透明度</Col>
             <Col span={8}>
               <InputNumber
-                placeholder="opacity"
+                placeholder="透明度"
                 className={styles.blockElm}
                 value={opacity}
                 min={0}

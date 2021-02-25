@@ -144,11 +144,11 @@ export class ProjectsForm extends React.PureComponent<IProjectsFormProps & FormC
                     {getFieldDecorator('orgId', {
                       rules: [{
                         required: true,
-                        message: 'Name 不能为空'
+                        message: '名称 不能为空'
                       }]
                     })(
                       <Select
-                        placeholder="Please select a organization"
+                        placeholder="请选择组织"
                         onChange={onWidgetTypeChange}
                       >
                         {organizationOptions}
@@ -161,13 +161,13 @@ export class ProjectsForm extends React.PureComponent<IProjectsFormProps & FormC
                     {getFieldDecorator('name', {
                       rules: [{
                         required: true,
-                        message: 'Name 不能为空'
+                        message: '名称不能为空'
                       }, {
                         validator: onCheckUniqueName
                       }],
                       validateFirst: true
                     })(
-                      <Input placeholder="Name" />
+                      <Input placeholder="名称" />
                     )}
                   </FormItem>
                 )}
@@ -179,7 +179,7 @@ export class ProjectsForm extends React.PureComponent<IProjectsFormProps & FormC
                       initialValue: ''
                     })(
                       <TextArea
-                        placeholder="Description"
+                        placeholder="描述"
                         autosize={{minRows: 2, maxRows: 6}}
                       />
                     )}

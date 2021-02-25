@@ -70,13 +70,13 @@ export class OrganizationForm extends React.PureComponent<IProjectsFormProps & F
                   {getFieldDecorator('name', {
                     rules: [{
                       required: true,
-                      message: 'Name 不能为空'
+                      message: '名称 不能为空'
                     }, {
                       validator: this.props.onCheckUniqueName
                     }],
                     validateFirst: true
                   })(
-                    <Input placeholder="Name" />
+                    <Input placeholder="名称" />
                   )}
                 </FormItem>
               </Col>
@@ -86,7 +86,7 @@ export class OrganizationForm extends React.PureComponent<IProjectsFormProps & F
                     initialValue: ''
                   })(
                     <TextArea
-                      placeholder="Description"
+                      placeholder="描述"
                       autosize={{minRows: 2, maxRows: 6}}
                     />
                   )}

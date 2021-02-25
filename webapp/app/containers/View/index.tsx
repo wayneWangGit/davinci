@@ -153,7 +153,7 @@ export class ViewList extends React.PureComponent<IViewListProps, IViewListState
       title: '描述',
       dataIndex: 'description'
     }, {
-      title: 'Source',
+      title: '数据源名称',
       dataIndex: 'sourceName',
       filterMultiple: false,
       onFilter: (val, record) => record.sourceName === val,

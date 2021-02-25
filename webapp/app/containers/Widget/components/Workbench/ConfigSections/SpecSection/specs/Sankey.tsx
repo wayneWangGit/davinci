@@ -49,7 +49,7 @@ function SpecSectionSankey (props: ISpecSectionSankeyProps) {
           <Col span={6}>节点宽度</Col>
           <Col span={6}>
             <InputNumber
-              placeholder="nodeWidth"
+              placeholder="节点宽度"
               className={styles.blockElm}
               value={nodeWidth}
               min={0}
@@ -59,7 +59,7 @@ function SpecSectionSankey (props: ISpecSectionSankeyProps) {
           <Col span={6}>节点间隔</Col>
           <Col span={6}>
             <InputNumber
-              placeholder="nodeGap"
+              placeholder="节点间隔"
               className={styles.blockElm}
               value={nodeGap}
               min={0}

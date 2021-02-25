@@ -4,8 +4,8 @@ import com.sun.org.apache.xml.internal.security.utils.Base64;
 import edp.core.utils.FileUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
+//import sun.misc.BASE64Decoder;
+//import sun.misc.BASE64Encoder;
 
 import javax.annotation.PostConstruct;
 import javax.crypto.Cipher;
@@ -255,7 +255,8 @@ public class SourcePasswordEncryptUtils {
             Cipher cipher = Cipher.getInstance(AES_TYPE);
             cipher.init(Cipher.ENCRYPT_MODE, key);
             byte[] encryptedData = cipher.doFinal(cleartext.getBytes(CODE_TYPE));
-            return new BASE64Encoder().encode(encryptedData);
+//            return new BASE64Encoder().encode(encryptedData);
+            return java.util.Base64.getEncoder().encodeToString(encryptedData);
         } catch (Exception e) {
             e.printStackTrace();
             return "";
@@ -270,7 +271,8 @@ public class SourcePasswordEncryptUtils {
      */
     public static String AESDecrypt(String encrypted) {
         try {
-            byte[] byteMi = new BASE64Decoder().decodeBuffer(encrypted);
+//            byte[] byteMi = new BASE64Decoder().decodeBuffer(encrypted);
+            byte[] byteMi = java.util.Base64.getDecoder().decode(encrypted);
             KeyGenerator kgen = KeyGenerator.getInstance(ALGORITHM_AES);
             String keyString = FileUtils.readFileToString(AES_BASE_PATH + AES_PRIVATE, CODE_TYPE);
             SecureRandom random = SecureRandom.getInstance("SHA1PRNG");

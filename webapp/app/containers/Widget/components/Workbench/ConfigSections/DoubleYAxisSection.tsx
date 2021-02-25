@@ -92,7 +92,7 @@ export class DoubleYAxisSection extends React.PureComponent<IDoubleYAxisSectionP
           <Row gutter={8} type="flex" align="middle" className={styles.blockRow}>
             <Col span={10}>
               <Select
-                placeholder="yAxisLeft"
+                placeholder="左Y轴"
                 className={styles.blockElm}
                 value={yAxisLeft}
                 onChange={this.selectChange('yAxisLeft')}
@@ -102,7 +102,7 @@ export class DoubleYAxisSection extends React.PureComponent<IDoubleYAxisSectionP
             </Col>
             <Col span={10}>
               <Select
-                placeholder="yAxisRight"
+                placeholder="右Y轴"
                 className={styles.blockElm}
                 value={yAxisRight}
                 onChange={this.selectChange('yAxisRight')}

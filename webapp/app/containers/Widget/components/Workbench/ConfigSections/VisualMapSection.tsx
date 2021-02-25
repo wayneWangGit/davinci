@@ -114,7 +114,7 @@ export class VisualMapSection extends React.PureComponent<IVisualMapSectionProps
             <Col span={4}>宽度</Col>
             <Col span={8}>
               <InputNumber
-                placeholder="width"
+                placeholder="宽度"
                 className={styles.blockElm}
                 value={visualMapWidth}
                 min={1}
@@ -124,7 +124,7 @@ export class VisualMapSection extends React.PureComponent<IVisualMapSectionProps
             <Col span={4}>高度</Col>
             <Col span={8}>
               <InputNumber
-                placeholder="height"
+                placeholder="高度"
                 className={styles.blockElm}
                 value={visualMapHeight}
                 min={1}

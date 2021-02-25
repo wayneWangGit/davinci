@@ -100,7 +100,7 @@ export class Setting extends React.PureComponent <ISettingProps> {
                        // validator: this.checkNameUnique
                       }]
                     })(
-                      <Input placeholder="Name"/>
+                      <Input placeholder="名称"/>
                     )}
                   </FormItem>
                 </Col>
@@ -111,7 +111,7 @@ export class Setting extends React.PureComponent <ISettingProps> {
                   >
                     {getFieldDecorator('description', {
                     })(
-                      <Input placeholder="description" />
+                      <Input placeholder="描述" />
                     )}
                   </FormItem>
                 </Col>

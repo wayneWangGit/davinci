@@ -444,7 +444,7 @@ export class ComputedConfigForm extends React.Component<IComputedConfigFormProps
                 <TabPane tab="函数" key="functions">
                   <div className={styles.menuWrapper}>
                     <Search
-                      placeholder="Search the function"
+                      placeholder="搜索"
                       onSearch={this.filterFunction}
                     />
                     {functionSelectMenu}
@@ -453,7 +453,7 @@ export class ComputedConfigForm extends React.Component<IComputedConfigFormProps
                 <TabPane tab="字段" key="model">
                   <div className={styles.menuWrapper}>
                     <Search
-                      placeholder="Search the function"
+                      placeholder="搜索"
                       onSearch={this.filterModel}
                     />
                     {modelSelectMenu}
@@ -462,7 +462,7 @@ export class ComputedConfigForm extends React.Component<IComputedConfigFormProps
                 <TabPane tab="变量" key="query">
                   <div className={styles.menuWrapper}>
                     <Search
-                      placeholder="Search the function"
+                      placeholder="搜索"
                       onSearch={this.filterQuery}
                     />
                     {querySelectMenu}

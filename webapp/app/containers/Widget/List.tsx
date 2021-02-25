@@ -63,8 +63,8 @@ const mapStateToProps = createStructuredSelector({
 })
 
 const columnTitle = {
-  name: 'Widget名称',
-  viewName: 'View名称'
+  name: '组件名称',
+  viewName: '视图名称'
 }
 
 const WidgetList: React.FC<RouteComponentWithParams> = (props) => {

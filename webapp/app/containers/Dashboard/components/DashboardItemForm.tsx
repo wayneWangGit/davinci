@@ -211,7 +211,7 @@ export class DashboardItemForm extends React.PureComponent<IDashboardItemFormPro
       key: 'name',
       filterDropdown: (
         <SearchFilterDropdown
-          placeholder="name"
+          placeholder="名称"
           value={nameFilterValue}
           onChange={this.onSearchInputChange}
           onSearch={this.onSearch}
